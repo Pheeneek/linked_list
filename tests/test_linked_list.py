@@ -29,5 +29,5 @@ class TestLinkedList(unittest.TestCase):
         for true_value, linked_value in zip(values, self.linked_list):
             self.assertEqual(true_value, linked_value)
 
-        for index, linked_value in self.linked_list:
+        for index, linked_value in enumerate(self.linked_list):
             self.assertEqual(values[index], linked_value)
